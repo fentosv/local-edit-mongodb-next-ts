@@ -1,0 +1,43 @@
+.navbar {
+  background-color: var(--color-dark-1);
+  color: var(--color-light-2);
+  padding: 1.4rem 0;
+}
+
+.navbar_container {
+  width: var(--section-width);
+  display: flex;
+  margin: auto;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 4rem;
+}
+
+.navlink {
+  font-size: 1.3rem;
+
+  @media (hover: hover) {
+    &:hover:not(.navlink--active) {
+      text-decoration: underline;
+    }
+  }
+}
+
+.navlink--active {
+  filter: brightness(0.8);
+
+  @media (hover: hover) {
+    &:hover {
+      cursor: default;
+    }
+  }
+}
+
+.navlink--right {
+  margin-left: auto;
+}
+
+.navbar_icon_img {
+  height: 80px;
+  width: 80px;
+}

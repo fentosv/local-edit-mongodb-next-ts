@@ -1,0 +1,32 @@
+@use '@sass_settings/sizes.scss';
+
+@font-face {
+    font-family: opensans;
+    src: url(../../public/fonts/open_sans/OpenSans-Regular.ttf);
+}
+
+:root {
+    --section-width: 60%;
+
+    --color-dark-1: #1e1e1e;
+    --color-dark-2: #121212;
+
+    --color-light-1: #ffff;
+    --color-light-2: #f3f3f3;
+    --color-light-3: #dddddd;
+
+    --color-brand-primary-1: #0A9396;
+    --color-brand-primary-2: #003843;
+    --color-brand-primary-3: #00313B;
+    --color-brand-secondary-1: #BB3E03;
+    --color-brand-secondary-2: #AE2012;
+    --color-brand-secondary-3: #9B2226;
+
+    --button-color: seagreen;
+
+}
+
+
+@media only screen and (max-width: sizes.$desktop) {
+    .section {}
+}

@@ -1,0 +1,23 @@
+@use '@sass_settings/sizes.scss';
+
+
+.table {
+    th {
+        padding: 0.7rem;
+    }
+
+    td {
+        padding: 0.3rem 1rem;
+    }
+}
+
+
+
+.default_cursor {
+    @media (hover: hover) {
+        &:hover {
+            cursor: default;
+        }
+    }
+
+}

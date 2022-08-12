@@ -1,0 +1,19 @@
+@use '@sass_settings/sizes.scss';
+
+.section {
+    width: var(--section-width);
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.full {
+    width: 100%;
+}
+
+.test {
+    background-color: lightgrey;
+}

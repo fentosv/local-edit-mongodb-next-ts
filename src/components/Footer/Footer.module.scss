@@ -1,0 +1,34 @@
+@use '@sass_settings/sizes.scss';
+
+.footer {
+  padding: 2rem;
+  background-color: var(--color-dark-1);
+  color: var(--color-light-2);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  user-select: none;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  h3 {
+    font-weight: initial;
+  }
+
+  a {
+    text-decoration: underline;
+    transform: scale(1.5);
+  }
+
+  @media only screen and (max-width: #{sizes.$tablet}) {
+    justify-content: space-between;
+    padding: 1.5rem;
+  }
+}
+
+@media (hover: hover) {}

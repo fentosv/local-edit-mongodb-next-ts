@@ -1,0 +1,38 @@
+@use '@sass_settings/sizes.scss';
+
+.button {
+    padding: 1rem;
+    font-size: 1.3rem;
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    border-radius: 0.6rem;
+
+    &:disabled {
+        background-color: rgb(134, 94, 134);
+    }
+
+    &:enabled:active {
+        transform: scale(.96);
+    }
+
+    @media (hover: hover) {
+        &:hover:not(:disabled) {
+            filter: brightness(0.8);
+        }
+    }
+}
+
+.mini {
+    padding: 0.7rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.red {
+    background-color: crimson;
+}
+
+.purple {
+    background-color: purple;
+}
